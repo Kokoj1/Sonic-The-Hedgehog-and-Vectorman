@@ -8,16 +8,21 @@ const death = document.getElementById("death");
 const startgame = document.getElementById("startbutton");
 const menu = document.getElementById("menu");
 const fight = document.getElementById("fight");
+const story = document.getElementById("story");
+const begin = document.getElementById("fightbegin");
 
 let numberOfCookies = 20;
 let cookieIncrease = 1;
 
 startgame.onclick = () =>{
-  document.body.style.backgroundImage="url(./res/img/greenhill.gif)";
   menu.style.display="none";
-fight.style.display="block";
+story.style.display="block";
 }
-
+begin.onclick = () => {
+  document.body.style.backgroundImage="url(./res/img/greenhill.gif)";
+  story.style.display="none";
+  fight.style.display="block";
+}
 const killAni = () => {
   hero.style.backgroundPosition="0 101%, center";
   death.style.opacity = 1;

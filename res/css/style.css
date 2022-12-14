@@ -10,9 +10,14 @@ body{
 #menu{
     text-align: center;
 }
-#fight{
+#story{
     display:none;
-    
+    width:600px;
+    margin:auto;
+    text-align: center;
+}
+#fight{
+    display:none;  
 }
 #death {
     width: 350px;
