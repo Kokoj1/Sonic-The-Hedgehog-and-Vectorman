@@ -10,7 +10,8 @@ const menu = document.getElementById("menu");
 const fight = document.getElementById("fight");
 const story = document.getElementById("story");
 const begin = document.getElementById("fightbegin");
-
+const next = document.getElementById("next");
+const story2 = document.getElementById("story2");
 let numberOfCookies = 20;
 let cookieIncrease = 1;
 
@@ -64,6 +65,7 @@ let interval = 0;
             hero.style.pointerEvents="none";
             enemy.style.backgroundImage="none";
             clearInterval(interval);
+            next.style.display="block";
           }
         }        
         counter.style.marginTop="-450px"
@@ -77,7 +79,11 @@ let interval = 0;
         }, 1000);
 
       };
-    
+    next.onclick = () => {
+      fight.style.display="none";
+      document.body.style.backgroundImage="none";
+      story2.style.display="block";
+    }
         
        
        
