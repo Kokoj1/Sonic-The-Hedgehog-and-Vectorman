@@ -1,2 +1,2 @@
-# projekt-webov--informace
-[View](https://kokoj1.github.io/projekt-webov--informace/)
+# projekt-webov--aplikace
+[View](https://kokoj1.github.io/projekt-webov--aplikace/)
