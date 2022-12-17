@@ -58,7 +58,7 @@ body{
 #counter {
     margin-left:60%;
     font-size: 42px;
-    margin-top:-300px;
+    margin-top:-290px;
     color: red;
     background-color: white;
     width:50px;
@@ -67,6 +67,7 @@ body{
 #counter2 {
     margin-left:35%;
      margin-top:25%;
+     margin-top:400px;
     font-size: 42px;
     color: rgb(236, 236, 236);
     background-color:red;
@@ -75,6 +76,7 @@ body{
 }
 #enemy{
      margin-left: 55%;
+     margin-left: 60%;
      background-image:url("../img/Sprite-0004.gif");
      height:220px;
      width: 250px;

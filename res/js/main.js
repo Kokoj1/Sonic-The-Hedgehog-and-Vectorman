@@ -69,7 +69,7 @@ let interval = 0;
             next.style.display="block";
           }
         }        
-        counter.style.marginTop="-450px"
+        counter.style.marginTop="-440px"
         start.style.display="none";
         interval=setInterval(() => {
           numberOfCookies2 -= autoClickerIncrease;
