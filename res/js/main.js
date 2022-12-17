@@ -69,7 +69,7 @@ let interval = 0;
             next.style.display="block";
           }
         }        
-        counter.style.marginTop="-440px"
+        counter.style.marginTop="-440px";
         start.style.display="none";
         interval=setInterval(() => {
           numberOfCookies2 -= autoClickerIncrease;
@@ -86,7 +86,7 @@ let interval = 0;
       story2.style.display="block";
     }
     begin2.onclick = () => {
-      document.body.style.backgroundImage="url(./res/img/greenhill.gif)";
+      document.body.style.backgroundImage="url(./res/img/chemical-plant-zone.png)";
       story2.style.display="none";
       fight2.style.display="block";
     }
@@ -136,23 +136,24 @@ let numberOfCookiesver2 = 20;
 
 let interval1 = 0;
        start1.onclick = () => {
+        counter3.style.marginTop="-440px";
         hero2.onclick= () => {
           hp -= damage;
           counter3.innerHTML = hp;
           if(hp<=0){ 
             hero2.style.pointerEvents="none";
             enemy2.style.backgroundImage="none";
-            clearInterval(interval);
+            clearInterval(interval1);
             next1.style.display="block";
           }
         }        
         counter3.style.marginTop="-450px"
         start1.style.display="none";
-        interval=setInterval(() => {
+        interval1=setInterval(() => {
           numberOfCookiesver2 -= autoClickerIncreasever1;
-          counter2.innerHTML = numberOfCookiesver2;
+          counter4.innerHTML = numberOfCookiesver2;
           if(numberOfCookiesver2<=0){
-            clearInterval(interval);
+            clearInterval(interval1);
           };
         }, 1000);
 
