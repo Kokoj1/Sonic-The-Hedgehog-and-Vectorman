@@ -12,6 +12,7 @@ const story = document.getElementById("story");
 const begin = document.getElementById("fightbegin");
 const next = document.getElementById("next");
 const story2 = document.getElementById("story2");
+const begin2 = document.getElementById("fightbegin2");
 let numberOfCookies = 20;
 let cookieIncrease = 1;
 
@@ -84,6 +85,89 @@ let interval = 0;
       document.body.style.backgroundImage="none";
       story2.style.display="block";
     }
+    begin2.onclick = () => {
+      document.body.style.backgroundImage="url(./res/img/greenhill.gif)";
+      story2.style.display="none";
+      fight2.style.display="block";
+    }
+    
+const hero2 = document.getElementById("hero2");
+const counter3 = document.getElementById("counter3");
+const enemy2 = document.getElementById("enemy2");
+const counter4 = document.getElementById("counter4");
+const start1=document.getElementById("start1");
+const death1 = document.getElementById("death1");
+const fight2 = document.getElementById("fight2");
+const next1 = document.getElementById("next1");
+
+const killAni1 = () => {
+  hero2.style.backgroundPosition="0 101%, center";
+  death1.style.opacity = 1;
+}
+
+const killAniRest1 = () => {
+  hero2.style.backgroundPosition="0 0%, center";
+  death1.style.opacity = 0;
+}
+
+hero2.addEventListener("mousedown", () => {
+  killAni1();
+  
+});
+
+hero2.addEventListener("touchstart", () => {
+  killAni1();
+});
+
+hero2.addEventListener("mouseup", () => {
+  killAniRest1();
+  
+});
+
+hero2.addEventListener("touchend", () => {
+  killAniRest1();
+});
+let hp = 20;
+let damage = 1;
+
+let autoClickerIncreasever1 = 1;
+let autoClickerIncreasever2 = 1;
+let numberOfCookiesver2 = 20;
+
+let interval1 = 0;
+       start1.onclick = () => {
+        hero2.onclick= () => {
+          hp -= damage;
+          counter3.innerHTML = hp;
+          if(hp<=0){ 
+            hero2.style.pointerEvents="none";
+            enemy2.style.backgroundImage="none";
+            clearInterval(interval);
+            next1.style.display="block";
+          }
+        }        
+        counter3.style.marginTop="-450px"
+        start1.style.display="none";
+        interval=setInterval(() => {
+          numberOfCookiesver2 -= autoClickerIncreasever1;
+          counter2.innerHTML = numberOfCookiesver2;
+          if(numberOfCookiesver2<=0){
+            clearInterval(interval);
+          };
+        }, 1000);
+
+      };
+
+
+       
+       
+       
+      
+        
+
+
+
+
         
        
        
