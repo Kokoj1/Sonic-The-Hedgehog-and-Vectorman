@@ -59,6 +59,11 @@ let numberOfCookies2 = 20;
 
 let interval = 0;
        start.onclick = () => {
+        enemy.style.backgroundImage="url(./res/img/bug-attack3.gif)";
+        enemy.style.marginTop="100px";
+        enemy.style.width="600px";
+        enemy.style.marginLeft="40%";
+        enemy.style.height="300px";
         hero.onclick= () => {
           numberOfCookies -= cookieIncrease;
           counter.innerHTML = numberOfCookies;
@@ -99,6 +104,7 @@ const start1=document.getElementById("start1");
 const death1 = document.getElementById("death1");
 const fight2 = document.getElementById("fight2");
 const next1 = document.getElementById("next1");
+const begin3 = document.getElementById("fightbegin3");
 
 const killAni1 = () => {
   hero2.style.backgroundPosition="0 101%, center";
@@ -136,7 +142,11 @@ let numberOfCookiesver2 = 20;
 
 let interval1 = 0;
        start1.onclick = () => {
-        counter3.style.marginTop="-440px";
+        enemy2.style.backgroundImage="url(./res/img/Sprite-0005.gif)";
+        enemy2.style.marginTop="100px";
+        enemy2.style.width="600px";
+        enemy2.style.marginLeft="40%";
+        enemy2.style.height="300px";
         hero2.onclick= () => {
           hp -= damage;
           counter3.innerHTML = hp;
@@ -156,9 +166,85 @@ let interval1 = 0;
             clearInterval(interval1);
           };
         }, 1000);
+      };
+      next1.onclick = () => {
+        fight2.style.display="none";
+        document.body.style.backgroundImage="none";
+        story3.style.display="block";
+      }
+      begin3.onclick = () => {
+        document.body.style.backgroundImage="url(./res/img/Sprite-0002.png)";
+        story3.style.display="none";
+        fight3.style.display="block";
+      }
+
+      const hero3 = document.getElementById("hero3");
+const counter5 = document.getElementById("counter5");
+const enemy3 = document.getElementById("enemy3");
+const counter6 = document.getElementById("counter6");
+const start2=document.getElementById("start2");
+const death2 = document.getElementById("death2");
+const fight3 = document.getElementById("fight3");
+const next2 = document.getElementById("next2");
+const story3 = document.getElementById("story3");
+
+const killAni2 = () => {
+  hero3.style.backgroundPosition="0 101%, center";
+  death2.style.opacity = 1;
+}
+
+const killAniRest2 = () => {
+  hero3.style.backgroundPosition="0 0%, center";
+  death2.style.opacity = 0;
+}
+
+hero3.addEventListener("mousedown", () => {
+  killAni2();
+  
+});
+
+hero3.addEventListener("touchstart", () => {
+  killAni2();
+});
+
+hero3.addEventListener("mouseup", () => {
+  killAniRest2();
+  
+});
+
+hero3.addEventListener("touchend", () => {
+  killAniRest2();
+});
+let hp2 = 20;
+let damage2 = 1;
+
+let autoClickerIncreasever3 = 1;
+let autoClickerIncrease3 = 1;
+let numberOfCookiesver3 = 20;
+
+let interval2 = 0;
+       start2.onclick = () => {
+        hero3.onclick= () => {
+          hp2 -= damage2;
+          counter5.innerHTML = hp2;
+          if(hp2<=0){ 
+            hero3.style.pointerEvents="none";
+            enemy3.style.backgroundImage="none";
+            clearInterval(interval2);
+            next2.style.display="block";
+          }
+        }        
+        counter5.style.marginTop="-430px"
+        start2.style.display="none";
+        interval2=setInterval(() => {
+          numberOfCookiesver3 -= autoClickerIncreasever3;
+          counter6.innerHTML = numberOfCookiesver3;
+          if(numberOfCookiesver3<=0){
+            clearInterval(interval);
+          };
+        }, 1000);
 
       };
-
 
        
        
