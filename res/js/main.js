@@ -13,6 +13,10 @@ const begin = document.getElementById("fightbegin");
 const next = document.getElementById("next");
 const story2 = document.getElementById("story2");
 const begin2 = document.getElementById("fightbegin2");
+const greenhill=document.getElementById("greenhill");
+const shot = document.getElementById("shot");
+const chemicalplant=document.getElementById("chemicalplant");
+const sky = document.getElementById("skysanctuary");
 let numberOfCookies = 20;
 let cookieIncrease = 1;
 
@@ -24,6 +28,7 @@ begin.onclick = () => {
   document.body.style.backgroundImage="url(./res/img/greenhill.gif)";
   story.style.display="none";
   fight.style.display="block";
+  greenhill.play();
 }
 const killAni = () => {
   hero.style.backgroundPosition="0 101%, center";
@@ -59,6 +64,7 @@ let numberOfCookies2 = 20;
 
 let interval = 0;
        start.onclick = () => {
+
         enemy.style.backgroundImage="url(./res/img/bug-attack3.gif)";
         enemy.style.marginTop="100px";
         enemy.style.width="600px";
@@ -67,6 +73,7 @@ let interval = 0;
         hero.onclick= () => {
           numberOfCookies -= cookieIncrease;
           counter.innerHTML = numberOfCookies;
+          shot.play();
           if(numberOfCookies<=0){ 
             hero.style.pointerEvents="none";
             enemy.style.backgroundImage="none";
@@ -86,11 +93,13 @@ let interval = 0;
 
       };
     next.onclick = () => {
+      greenhill.pause();
       fight.style.display="none";
       document.body.style.backgroundImage="none";
       story2.style.display="block";
     }
     begin2.onclick = () => {
+      chemicalplant.play();
       document.body.style.backgroundImage="url(./res/img/chemical-plant-zone.png)";
       story2.style.display="none";
       fight2.style.display="block";
@@ -148,6 +157,7 @@ let interval1 = 0;
         enemy2.style.marginLeft="40%";
         enemy2.style.height="300px";
         hero2.onclick= () => {
+          shot.play();
           hp -= damage;
           counter3.innerHTML = hp;
           if(hp<=0){ 
@@ -168,11 +178,13 @@ let interval1 = 0;
         }, 1000);
       };
       next1.onclick = () => {
+        chemicalplant.pause();
         fight2.style.display="none";
         document.body.style.backgroundImage="none";
         story3.style.display="block";
       }
       begin3.onclick = () => {
+        sky.play();
         document.body.style.backgroundImage="url(./res/img/Sprite-0002.png)";
         story3.style.display="none";
         fight3.style.display="block";
@@ -224,7 +236,13 @@ let numberOfCookiesver3 = 20;
 
 let interval2 = 0;
        start2.onclick = () => {
+        enemy3.style.backgroundImage="url(./res/img/Sprite-0001-export.gif)";
+        enemy3.style.marginTop="160px";
+        enemy3.style.width="470px";
+        enemy3.style.marginLeft="45%";
+        enemy3.style.height="230px";
         hero3.onclick= () => {
+          shot.play();
           hp2 -= damage2;
           counter5.innerHTML = hp2;
           if(hp2<=0){ 
@@ -245,7 +263,11 @@ let interval2 = 0;
         }, 1000);
 
       };
-
+      next2.onclick = () => {
+        sky.pause();
+        fight3.style.display="none";
+        document.body.style.backgroundImage="none";
+      }
        
        
        
