@@ -9,8 +9,18 @@ body{
    background-size: cover;
    margin: auto;
 }
+#vector{
+    height:500px;
+    width:700px;
+    margin-top:-150px;
+}
+#sonic{
+    height:400px;
+    width:700px;
+}
 #menu{
     text-align: center;
+    margin: 0 auto;
     color:white;
 }
 #story{

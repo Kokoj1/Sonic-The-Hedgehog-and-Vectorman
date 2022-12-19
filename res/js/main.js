@@ -17,6 +17,13 @@ const greenhill=document.getElementById("greenhill");
 const shot = document.getElementById("shot");
 const chemicalplant=document.getElementById("chemicalplant");
 const sky = document.getElementById("skysanctuary");
+const title = document.getElementById("titlesong");
+
+window.onload=function(){
+  title.play();
+}
+
+
 let numberOfCookies = 20;
 let cookieIncrease = 1;
 
