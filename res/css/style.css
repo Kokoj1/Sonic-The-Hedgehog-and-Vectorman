@@ -1,5 +1,6 @@
 html,
 body{
+    background-image: url("../img/download.png");
     background-color: black;
    height:1070px;
    width:95%;
