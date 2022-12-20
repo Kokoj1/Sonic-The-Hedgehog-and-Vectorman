@@ -17,6 +17,7 @@ const greenhill=document.getElementById("greenhill");
 const shot = document.getElementById("shot");
 const chemicalplant=document.getElementById("chemicalplant");
 const sky = document.getElementById("skysanctuary");
+const icecap = document.getElementById("icecap");
 
 window.onload=function(){
   document.getElementById("titlesong").play();
@@ -205,7 +206,7 @@ const death2 = document.getElementById("death2");
 const fight3 = document.getElementById("fight3");
 const next2 = document.getElementById("next2");
 const story3 = document.getElementById("story3");
-
+const begin4 = document.getElementById("fightbegin4");
 const killAni2 = () => {
   hero3.style.backgroundPosition="0 101%, center";
   death2.style.opacity = 1;
@@ -264,7 +265,7 @@ let interval2 = 0;
           numberOfCookiesver3 -= autoClickerIncreasever3;
           counter6.innerHTML = numberOfCookiesver3;
           if(numberOfCookiesver3<=0){
-            clearInterval(interval);
+            clearInterval(interval2);
           };
         }, 1000);
 
@@ -273,8 +274,88 @@ let interval2 = 0;
         sky.pause();
         fight3.style.display="none";
         document.body.style.backgroundImage="none";
+        story4.style.display="block";
       }
-       
+      begin4.onclick = () => {
+        icecap.play();
+        document.body.style.backgroundImage="url(./res/img/ice-cap2.png)";
+        story4.style.display="none";
+        fight4.style.display="block";
+      }
+
+      const story4 = document.getElementById("story4");
+const hero4 = document.getElementById("hero4");
+const counter7 = document.getElementById("counter7");
+const enemy4 = document.getElementById("enemy4");
+const counter8 = document.getElementById("counter8");
+const start3=document.getElementById("start3");
+const death3 = document.getElementById("death3");
+const fight4 = document.getElementById("fight4");
+const next3 = document.getElementById("next3");
+
+const killAni3 = () => {
+  hero4.style.backgroundPosition="0 101%, center";
+  death3.style.opacity = 1;
+}
+
+const killAniRest3 = () => {
+  hero4.style.backgroundPosition="0 0%, center";
+  death3.style.opacity = 0;
+}
+
+hero4.addEventListener("mousedown", () => {
+  killAni3();
+  
+});
+
+hero4.addEventListener("touchstart", () => {
+  killAni3();
+});
+
+hero4.addEventListener("mouseup", () => {
+  killAniRest3();
+  
+});
+
+hero4.addEventListener("touchend", () => {
+  killAniRest3();
+});
+
+let hp3 = 20;
+let damage3 = 1;
+
+let autoClickerIncreasever4 = 1;
+let autoClickerIncrease4 = 1;
+let numberOfCookiesver4 = 20;
+
+let interval3 = 0;
+       start3.onclick = () => {
+        hero4.onclick= () => {
+          hp3 -= damage3;
+          counter7.innerHTML = hp3;
+          if(hp3<=0){ 
+            hero4.style.pointerEvents="none";
+            enemy4.style.backgroundImage="none";
+            clearInterval(interval3);
+            next3.style.display="block";
+          }
+        }        
+        counter7.style.marginTop="-450px"
+        start3.style.display="none";
+        interval3=setInterval(() => {
+          numberOfCookiesver4 -= autoClickerIncreasever4;
+          counter8.innerHTML = numberOfCookiesver4;
+          if(numberOfCookiesver4<=0){
+            clearInterval(interval3);
+          };
+        }, 1000);
+
+      };
+      next3.onclick = () => {
+        icecap.pause();
+        fight4.style.display="none";
+        document.body.style.backgroundImage="none";
+      }
        
        
       
