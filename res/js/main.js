@@ -18,7 +18,13 @@ const shot = document.getElementById("shot");
 const chemicalplant=document.getElementById("chemicalplant");
 const sky = document.getElementById("skysanctuary");
 const icecap = document.getElementById("icecap");
+const gameover = document.getElementById("gameover");
+const back = document.getElementById("back");
+const over = document.getElementById("over");
 
+back.onclick = () =>{
+  window.location.reload();
+}
 window.onload=function(){
   document.getElementById("titlesong").play();
 };
@@ -95,6 +101,12 @@ let interval = 0;
           counter2.innerHTML = numberOfCookies2;
           if(numberOfCookies2<=0){
             clearInterval(interval);
+            fight.style.display="none";
+            document.body.style.backgroundImage="none";
+            gameover.style.display="block";
+            greenhill.pause();
+            over.play();
+
           };
         }, 1000);
 
@@ -181,6 +193,11 @@ let interval1 = 0;
           counter4.innerHTML = numberOfCookiesver2;
           if(numberOfCookiesver2<=0){
             clearInterval(interval1);
+            fight.style.display="none";
+            document.body.style.backgroundImage="none";
+            gameover.style.display="block";
+            chemicalplant.pause();
+            over.play();
           };
         }, 1000);
       };
@@ -266,6 +283,11 @@ let interval2 = 0;
           counter6.innerHTML = numberOfCookiesver3;
           if(numberOfCookiesver3<=0){
             clearInterval(interval2);
+            fight.style.display="none";
+            document.body.style.backgroundImage="none";
+            gameover.style.display="block";
+            sky.pause();
+            over.play();
           };
         }, 1000);
 
@@ -278,7 +300,7 @@ let interval2 = 0;
       }
       begin4.onclick = () => {
         icecap.play();
-        document.body.style.backgroundImage="url(./res/img/ice-cap2.png)";
+        document.body.style.backgroundImage="url(./res/img/icecap.png)";
         story4.style.display="none";
         fight4.style.display="block";
       }
@@ -346,7 +368,12 @@ let interval3 = 0;
           numberOfCookiesver4 -= autoClickerIncreasever4;
           counter8.innerHTML = numberOfCookiesver4;
           if(numberOfCookiesver4<=0){
-            clearInterval(interval3);
+            clearInterval(interval3); 
+            fight.style.display="none";
+            document.body.style.backgroundImage="none";
+            gameover.style.display="block";
+            icecap.pause();
+            over.play();
           };
         }, 1000);
 

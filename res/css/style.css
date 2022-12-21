@@ -1,7 +1,6 @@
 html,
 body{
     background-image: url("../img/download.png");
-    background-color: black;
    height:1070px;
    width:95%;
    overflow: auto;
@@ -9,6 +8,14 @@ body{
    background-position:center;
    background-size: cover;
    margin: auto;
+}
+#gameover{
+    color:white;
+    display:none;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    height:100%;
 }
 #vector{
     height:500px;
@@ -284,10 +291,10 @@ body{
     width:50px;
 }
 #enemy4{
-     margin-left: 60%;
-     background-image:url("../img/mecha sonic2.gif");
+     margin-left: 50%;
+     background-image:url("../img/Sprite-0003.png");
      height:220px;
-     width: 164px;
+     width: 300px;
      margin-top:180px;
 }
 #start3{
