@@ -352,7 +352,13 @@ let numberOfCookiesver4 = 20;
 
 let interval3 = 0;
        start3.onclick = () => {
+        enemy4.style.backgroundImage="url(./res/img/metal-sonic.gif)";
+        enemy4.style.marginTop="100px";
+        enemy4.style.width="600px";
+        enemy4.style.marginLeft="40%";
+        enemy4.style.height="300px";
         hero4.onclick= () => {
+          shot.play();
           hp3 -= damage3;
           counter7.innerHTML = hp3;
           if(hp3<=0){ 
