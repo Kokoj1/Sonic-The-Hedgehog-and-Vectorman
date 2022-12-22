@@ -9,6 +9,40 @@ body{
    background-size: cover;
    margin: auto;
 }
+#startbutton{
+    font-family: sonic2;
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
+#back{
+    font-family: sonic2;
+}
+#fightbegin{
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
+#fightbegin2{
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
+#fightbegin3{
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
+#fightbegin4{
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
 #gameover{
     color:white;
     display:none;
@@ -37,7 +71,7 @@ body{
     width:50%;
     margin:auto;
     text-align: center;
-    font-family: text;
+    font-family: sonic1;
 }
 #story2{
     color:white;
@@ -51,6 +85,12 @@ body{
     display:none;
     text-align:center;
     margin: auto;
+    font-family: sonic2;
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+    color:white;
 }
 #fight{
     display:none;  
@@ -84,7 +124,7 @@ body{
     background-color: white;
     width:50px;
     height:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #counter2 {
     margin-left:30%;
@@ -94,7 +134,7 @@ body{
     background-color:red;
     height:50px;
     width:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #enemy{
     margin-left: 60%;
@@ -115,6 +155,12 @@ body{
     display:none;
     text-align:center;
     margin: auto;
+    font-family: sonic2;
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+    color:white;
 }
 #fight2{
     display:none;  
@@ -147,7 +193,7 @@ body{
     background-color: white;
     width:50px;
     height:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #counter4 {
     margin-left:35%;
@@ -157,7 +203,7 @@ body{
     background-color:red;
     height:50px;
     width:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #enemy2{
     margin-left: 55%;
@@ -207,7 +253,7 @@ body{
     background-color: white;
     width:50px;
     height:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #counter6 {
     margin-left:35%;
@@ -217,7 +263,7 @@ body{
     background-color:red;
     height:50px;
     width:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #enemy3{
      margin-left: 60%;
@@ -232,7 +278,7 @@ body{
     width:60%;
     margin:auto;
     text-align: center;
-    font-family: text;
+    font-family: sonic1;
 }
 #start2{
     margin-left:45%;
@@ -243,6 +289,12 @@ body{
     display:none;
     text-align:center;
     margin: auto;
+    font-family: sonic2;
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+    color:white;
 }
 
 #story4 {
@@ -250,7 +302,7 @@ body{
     color: white;
     margin:auto;
     text-align:center;
-    font-family: text;
+    font-family: sonic1;
 }
 #fight4{
     display:none;
@@ -265,7 +317,7 @@ body{
 
 #story4{
     display:none;
-    font-family: text;
+    font-family: sonic1;
 }
 #hero4 {
     height: 210px;
@@ -288,7 +340,7 @@ body{
     background-color: white;
     width:50px;
     height:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #counter8 {
     margin-left:35%;
@@ -298,7 +350,7 @@ body{
     background-color:red;
     height:50px;
     width:50px;
-    font-family: text;
+    font-family: sonic1;
 }
 #enemy4{
      margin-left: 50%;
@@ -317,9 +369,17 @@ body{
     display:none;
     text-align:center;
     margin: auto;
+    font-family: sonic2;
+    background-color:black;
+    color:white;
+    width:100px;
+    margin:auto;
+    height:15px;
 }
-@font-face{font-family: text;
+@font-face{font-family: sonic1;
     src: url("../fonts/SonicHUD.ttf")}
+    @font-face{font-family: sonic2;
+        src: url("../fonts/sonic-2-caps.ttf")}
 @media all and (max-width:1400px){
 #counter2{margin-top:480px;}
 #hero{margin-left:20%;}
