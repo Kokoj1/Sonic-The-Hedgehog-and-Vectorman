@@ -13,6 +13,7 @@ const begin = document.getElementById("fightbegin");
 const next = document.getElementById("next");
 const story2 = document.getElementById("story2");
 const begin2 = document.getElementById("fightbegin2");
+const begin5 = document.getElementById("fightbegin5");
 const greenhill=document.getElementById("greenhill");
 const shot = document.getElementById("shot");
 const chemicalplant=document.getElementById("chemicalplant");
@@ -388,7 +389,81 @@ let interval3 = 0;
         icecap.pause();
         fight4.style.display="none";
         document.body.style.backgroundImage="none";
+        story5.style.display="block";
       }
+      begin5.onclick = () => {
+        icecap.play();
+        document.body.style.backgroundImage="url(./res/img/icecap.png)";
+        story5.style.display="none";
+        fight5.style.display="block";
+      }
+
+      const story5 = document.getElementById("story5");     
+const hero5 = document.getElementById("hero5");
+const counter9 = document.getElementById("counter9");
+const enemy5 = document.getElementById("enemy5");
+const counter10 = document.getElementById("counter10");
+const death4 = document.getElementById("death4");
+const fight5 = document.getElementById("fight5");
+const next4 = document.getElementById("next4");
+const start4 = document.getElementById("start4");
+const killAni4 = () => {
+  hero5.style.backgroundPosition="0 101%, center";
+  death4.style.opacity = 1;
+}
+
+const killAniRest4 = () => {
+  hero5.style.backgroundPosition="0 0%, center";
+  death4.style.opacity = 0;
+}
+
+hero5.addEventListener("mousedown", () => {
+  killAni4();
+  
+});
+
+hero5.addEventListener("touchstart", () => {
+  killAni4();
+});
+
+hero5.addEventListener("mouseup", () => {
+  killAniRest4();
+  
+});
+
+hero5.addEventListener("touchend", () => {
+  killAniRest4();
+});
+let hp4 = 20;
+let damage4 = 1;
+
+let autoClickerIncreasever5 = 1;
+let autoClickerIncrease5 = 1;
+let numberOfCookiesver5 = 20;
+
+let interval4 = 0;
+       start4.onclick = () => {
+        hero5.onclick= () => {
+          hp4 -= damage4;
+          counter9.innerHTML = hp4;
+          if(hp4<=0){ 
+            hero5.style.pointerEvents="none";
+            enemy5.style.backgroundImage="none";
+            clearInterval(interval3);
+            next4.style.display="block";
+          }
+        }        
+        counter9.style.marginTop="-450px"
+        start4.style.display="none";
+        interval4=setInterval(() => {
+          numberOfCookiesver5 -= autoClickerIncreasever5;
+          counter10.innerHTML = numberOfCookiesver5;
+          if(numberOfCookiesver5<=0){
+            clearInterval(interval4);
+          };
+        }, 1000);
+
+      };
        
        
       

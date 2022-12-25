@@ -18,6 +18,7 @@ body{
 }
 #back{
     font-family: sonic2;
+    font-size: medium;
 }
 #fightbegin{
     background-color:black;
@@ -50,6 +51,8 @@ body{
     margin: auto;
     background-color: black;
     height:100%;
+    font-size: xx-large;
+    font-family:sonic1;
 }
 #vector{
     height:500px;
@@ -375,6 +378,71 @@ body{
     width:100px;
     margin:auto;
     height:15px;
+}
+
+
+
+#fight5{
+    display:none;
+}
+#death5 {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 0;
+}
+
+#hero5 {
+    height: 210px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 30%;;
+    margin-top:180px;
+    transition: .3s transform ease;
+    background-image: url("../img/gifnoloop-export\ \(2\).gif");
+    background-repeat: no-repeat;
+    background-position: 0 0%, center;
+    background-size: 600px;
+    z-index: 2;
+}
+#counter9 {
+    margin-left:63%;
+    font-size: 42px;
+    margin-top:-700px;
+    color: red;
+    background-color: white;
+    width:50px;
+    height:50px;
+}
+#counter10 {
+    margin-left:35%;
+     margin-top:520px;
+    font-size: 42px;
+    color: rgb(236, 236, 236);
+    background-color:red;
+    height:50px;
+    width:50px;
+}
+#enemy5{
+     margin-left: 60%;
+     background-image:url("../img/deathegg\ \(2\).gif");
+     height:600px;
+     width: 447px;
+     margin-top:180px;
+}
+#start4{
+    margin-left:45%;
+    width:100px;
+    margin-top:-150px;
+    background-color:red;
+}
+#story5{
+    display:none;
+    color: white;
+    margin:auto;
+    text-align:center;
+    font-family: sonic1;
 }
 @font-face{font-family: sonic1;
     src: url("../fonts/SonicHUD.ttf")}
