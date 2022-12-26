@@ -1,6 +1,5 @@
 html,
 body{
-    background-image: url("../img/download.png");
    height:1070px;
    width:95%;
    overflow: auto;
@@ -8,6 +7,7 @@ body{
    background-position:center;
    background-size: cover;
    margin: auto;
+   background-color:black;
 }
 #startbutton{
     font-family: sonic2;
@@ -67,6 +67,14 @@ body{
     text-align: center;
     margin: 0 auto;
     color:white;
+    background-image: url("../img/download.png");
+    height:1070px;
+    width:95%;
+    overflow: auto;
+    overflow-y: hidden;
+    background-position:center;
+    background-size: cover;
+    margin: auto;
 }
 #story{
     color:white;
@@ -397,19 +405,19 @@ body{
     height: 210px;
     max-width: 600px;
     width: 100%;
-    margin-left: 30%;;
+    margin-left: 10%;;
     margin-top:180px;
     transition: .3s transform ease;
-    background-image: url("../img/gifnoloop-export\ \(2\).gif");
+    background-image: url("../img/gifnoloop-export\ \(2\)ver3.gif");
     background-repeat: no-repeat;
     background-position: 0 0%, center;
     background-size: 600px;
     z-index: 2;
 }
 #counter9 {
-    margin-left:63%;
+    margin-left:70%;
     font-size: 42px;
-    margin-top:-700px;
+    margin-top:-755px;
     color: red;
     background-color: white;
     width:50px;
@@ -425,7 +433,7 @@ body{
     width:50px;
 }
 #enemy5{
-     margin-left: 60%;
+     margin-left: 62%;
      background-image:url("../img/deathegg\ \(2\).gif");
      height:600px;
      width: 447px;
@@ -443,6 +451,10 @@ body{
     margin:auto;
     text-align:center;
     font-family: sonic1;
+}
+#enemycounter{
+    width:500px;
+    margin-left:50%;
 }
 @font-face{font-family: sonic1;
     src: url("../fonts/SonicHUD.ttf")}

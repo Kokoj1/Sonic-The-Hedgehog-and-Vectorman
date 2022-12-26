@@ -393,7 +393,7 @@ let interval3 = 0;
       }
       begin5.onclick = () => {
         icecap.play();
-        document.body.style.backgroundImage="url(./res/img/icecap.png)";
+        document.body.style.backgroundImage="url(./res/img/deatheggzone.png)";
         story5.style.display="none";
         fight5.style.display="block";
       }
@@ -407,6 +407,7 @@ const death4 = document.getElementById("death4");
 const fight5 = document.getElementById("fight5");
 const next4 = document.getElementById("next4");
 const start4 = document.getElementById("start4");
+const enemycounter = document.getElementById("enemycounter");
 const killAni4 = () => {
   hero5.style.backgroundPosition="0 101%, center";
   death4.style.opacity = 1;
@@ -443,13 +444,19 @@ let numberOfCookiesver5 = 20;
 
 let interval4 = 0;
        start4.onclick = () => {
+        enemy5.style.backgroundImage="url(./res/img/deatheggatt.gif)";
+        enemy5.style.marginTop="200px";
+        enemy5.style.width="800px";
+        enemy5.style.marginLeft="-10%";
+        enemy5.style.height="600px";
+enemycounter.style.marginTop="-770px";
         hero5.onclick= () => {
           hp4 -= damage4;
           counter9.innerHTML = hp4;
           if(hp4<=0){ 
             hero5.style.pointerEvents="none";
             enemy5.style.backgroundImage="none";
-            clearInterval(interval3);
+            clearInterval(interval4);
             next4.style.display="block";
           }
         }        
