@@ -172,9 +172,9 @@ let numberOfCookiesver2 = 20;
 let interval1 = 0;
        start1.onclick = () => {
         enemy2.style.backgroundImage="url(./res/img/Sprite-0005.gif)";
-        enemy2.style.marginTop="100px";
+        enemy2.style.marginTop="95px";
         enemy2.style.width="600px";
-        enemy2.style.marginLeft="40%";
+        enemy2.style.marginLeft="44%";
         enemy2.style.height="300px";
         hero2.onclick= () => {
           shot.play();
@@ -262,7 +262,7 @@ let numberOfCookiesver3 = 20;
 let interval2 = 0;
        start2.onclick = () => {
         enemy3.style.backgroundImage="url(./res/img/Sprite-0001-export.gif)";
-        enemy3.style.marginTop="160px";
+        enemy3.style.marginTop="150px";
         enemy3.style.width="470px";
         enemy3.style.marginLeft="45%";
         enemy3.style.height="230px";
@@ -353,9 +353,9 @@ let numberOfCookiesver4 = 20;
 
 let interval3 = 0;
        start3.onclick = () => {
-        enemy4.style.backgroundImage="url(./res/img/metal-sonic.gif)";
-        enemy4.style.marginTop="100px";
-        enemy4.style.width="600px";
+        enemy4.style.backgroundImage="url(./res/img/metal-sonicatt-export.gif)";
+        enemy4.style.marginTop="130px";
+        enemy4.style.width="500px";
         enemy4.style.marginLeft="40%";
         enemy4.style.height="300px";
         hero4.onclick= () => {
@@ -393,7 +393,7 @@ let interval3 = 0;
       }
       begin5.onclick = () => {
         icecap.play();
-        document.body.style.backgroundImage="url(./res/img/deatheggzone.png)";
+        document.body.style.backgroundImage="url(./res/img/deathegg2.png)";
         story5.style.display="none";
         fight5.style.display="block";
       }
@@ -445,11 +445,11 @@ let numberOfCookiesver5 = 20;
 let interval4 = 0;
        start4.onclick = () => {
         enemy5.style.backgroundImage="url(./res/img/deatheggatt.gif)";
-        enemy5.style.marginTop="200px";
+        enemy5.style.marginTop="250px";
         enemy5.style.width="800px";
         enemy5.style.marginLeft="-10%";
         enemy5.style.height="600px";
-enemycounter.style.marginTop="-770px";
+enemycounter.style.marginTop="-800px";
         hero5.onclick= () => {
           hp4 -= damage4;
           counter9.innerHTML = hp4;

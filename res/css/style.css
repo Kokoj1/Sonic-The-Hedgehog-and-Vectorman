@@ -1,6 +1,6 @@
 html,
 body{
-   height:1070px;
+   height:1024px;
    width:95%;
    overflow: auto;
    overflow-y: hidden;
@@ -136,9 +136,10 @@ body{
     width:50px;
     height:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #counter2 {
-    margin-left:30%;
+    margin-left:35%;
      margin-top:500px;
     font-size: 42px;
     color: rgb(236, 236, 236);
@@ -146,6 +147,7 @@ body{
     height:50px;
     width:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #enemy{
     margin-left: 60%;
@@ -188,7 +190,7 @@ body{
     max-width: 600px;
     width: 100%;
     margin-left: 33%;;
-    margin-top:180px;
+    margin-top:130px;
     transition: .3s transform ease;
     background-image: url("../img/gifnoloop-export\ \(2\)ver3.gif");
     background-repeat: no-repeat;
@@ -197,7 +199,7 @@ body{
     z-index: 2;
 }
 #counter3 {
-    margin-left:63%;
+    margin-left:75%;
     font-size: 42px;
     margin-top:-300px;
     color: red;
@@ -205,6 +207,7 @@ body{
     width:50px;
     height:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #counter4 {
     margin-left:35%;
@@ -215,14 +218,14 @@ body{
     height:50px;
     width:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #enemy2{
-    margin-left: 55%;
-     margin-left: 63%;
+    margin-left: 71%;
      background-image:url("../img/mecha\ sonic2.gif");
      height:220px;
      width: 160px;
-     margin-top:180px;
+     margin-top:178px;
 }
 #start1{
     margin-left:45%;
@@ -248,7 +251,7 @@ body{
     max-width: 600px;
     width: 100%;
     margin-left: 30%;;
-    margin-top:160px;
+    margin-top:140px;
     transition: .3s transform ease;
     background-image: url("../img/gifnoloop-export\ \(2\)ver3.gif");
     background-repeat: no-repeat;
@@ -259,29 +262,31 @@ body{
 #counter5 {
     margin-left:63%;
     font-size: 42px;
-    margin-top:-280px;
+    margin-top:-250px;
     color: red;
     background-color: white;
     width:50px;
     height:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #counter6 {
     margin-left:35%;
-     margin-top:10px;
+     margin-top:20px;
     font-size: 42px;
     color: rgb(236, 236, 236);
     background-color:red;
     height:50px;
     width:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #enemy3{
-     margin-left: 60%;
+     margin-left: 62%;
      background-image:url("../img/Sprite-0001.png");
-     height:220px;
+     height:230px;
      width: 150px;
-     margin-top:160px;
+     margin-top:120px;
 }
 #story3{
     color:white;
@@ -352,6 +357,7 @@ body{
     width:50px;
     height:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #counter8 {
     margin-left:35%;
@@ -362,13 +368,14 @@ body{
     height:50px;
     width:50px;
     font-family: sonic1;
+    text-align:center;
 }
 #enemy4{
-     margin-left: 50%;
-     background-image:url("../img/Sprite-0003.png");
+     margin-left: 55%;
+     background-image:url("../img/metal-sonic.png");
      height:220px;
      width: 300px;
-     margin-top:180px;
+     margin-top:200px;
 }
 #start3{
     margin-left:45%;
@@ -386,6 +393,7 @@ body{
     width:100px;
     margin:auto;
     height:15px;
+    margin-top:-100px;
 }
 
 
@@ -405,8 +413,8 @@ body{
     height: 210px;
     max-width: 600px;
     width: 100%;
-    margin-left: 10%;;
-    margin-top:180px;
+    margin-left: 30%;;
+    margin-top:250px;
     transition: .3s transform ease;
     background-image: url("../img/gifnoloop-export\ \(2\)ver3.gif");
     background-repeat: no-repeat;
@@ -415,13 +423,14 @@ body{
     z-index: 2;
 }
 #counter9 {
-    margin-left:70%;
+    margin-left:60%;
     font-size: 42px;
-    margin-top:-755px;
+    margin-top:-900px;
     color: red;
     background-color: white;
     width:50px;
     height:50px;
+    text-align:center;
 }
 #counter10 {
     margin-left:35%;
@@ -431,9 +440,10 @@ body{
     background-color:red;
     height:50px;
     width:50px;
+    text-align:center;
 }
 #enemy5{
-     margin-left: 62%;
+     margin-left: 50%;
      background-image:url("../img/deathegg\ \(2\).gif");
      height:600px;
      width: 447px;
