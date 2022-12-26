@@ -9,6 +9,21 @@ body{
    margin: auto;
    background-color:black;
 }
+#logo{
+    text-align: center;
+    margin: 0 auto;
+    color:white;
+}
+#segalogo{
+    width:50%;
+}
+#startbutton1{
+    font-family: sonic2;
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
 #startbutton{
     font-family: sonic2;
     background-color:black;
@@ -44,6 +59,12 @@ body{
     margin:auto;
     height:15px;
 }
+#fightbegin4{
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+}
 #gameover{
     color:white;
     display:none;
@@ -64,6 +85,7 @@ body{
     width:700px;
 }
 #menu{
+    display:none;
     text-align: center;
     margin: 0 auto;
     color:white;
@@ -91,6 +113,7 @@ body{
     margin:auto;
     text-align: center;
     font-family: text;
+    font-family: sonic1;
 }
 #next{
     display:none;
@@ -312,6 +335,10 @@ body{
     height:15px;
     color:white;
 }
+#enemyc{
+    width:300px;
+    margin-left:50%;
+}
 
 #story4 {
     display:none;
@@ -340,7 +367,7 @@ body{
     max-width: 600px;
     width: 100%;
     margin-left: 30%;;
-    margin-top:180px;
+    margin-top:140px;
     transition: .3s transform ease;
     background-image: url("../img/gifnoloop-export\ \(2\)ver3.gif");
     background-repeat: no-repeat;
@@ -351,7 +378,7 @@ body{
 #counter7 {
     margin-left:63%;
     font-size: 42px;
-    margin-top:-300px;
+    margin-top:-270px;
     color: red;
     background-color: white;
     width:50px;
@@ -375,7 +402,11 @@ body{
      background-image:url("../img/metal-sonic.png");
      height:220px;
      width: 300px;
-     margin-top:200px;
+     margin-top:180px;
+}
+#enemyc2{
+    width:300px;
+    margin-left:50%;
 }
 #start3{
     margin-left:45%;
@@ -414,7 +445,7 @@ body{
     max-width: 600px;
     width: 100%;
     margin-left: 30%;;
-    margin-top:250px;
+    margin-top:190px;
     transition: .3s transform ease;
     background-image: url("../img/gifnoloop-export\ \(2\)ver3.gif");
     background-repeat: no-repeat;
@@ -425,12 +456,13 @@ body{
 #counter9 {
     margin-left:60%;
     font-size: 42px;
-    margin-top:-900px;
+    margin-top:-815px;
     color: red;
     background-color: white;
     width:50px;
     height:50px;
     text-align:center;
+    font-family: sonic1;
 }
 #counter10 {
     margin-left:35%;
@@ -441,19 +473,19 @@ body{
     height:50px;
     width:50px;
     text-align:center;
+    font-family: sonic1;
 }
 #enemy5{
      margin-left: 50%;
      background-image:url("../img/deathegg\ \(2\).gif");
      height:600px;
      width: 447px;
-     margin-top:180px;
+     margin-top:160px;
 }
 #start4{
     margin-left:45%;
     width:100px;
     margin-top:-150px;
-    background-color:red;
 }
 #story5{
     display:none;
@@ -465,6 +497,18 @@ body{
 #enemycounter{
     width:500px;
     margin-left:50%;
+}
+#next4{
+    display:none;
+    text-align:center;
+    margin: auto;
+    font-family: sonic2;
+    background-color:black;
+    width:100px;
+    margin:auto;
+    height:15px;
+    color:white;
+    margin-top:-100px;
 }
 @font-face{font-family: sonic1;
     src: url("../fonts/SonicHUD.ttf")}

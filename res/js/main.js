@@ -20,16 +20,21 @@ const chemicalplant=document.getElementById("chemicalplant");
 const sky = document.getElementById("skysanctuary");
 const icecap = document.getElementById("icecap");
 const gameover = document.getElementById("gameover");
+const final = document.getElementById("final");
 const back = document.getElementById("back");
 const over = document.getElementById("over");
+const startbutton1 = document.getElementById("startbutton1");
+const logo = document.getElementById("logo");
+const titlesong = document.getElementById("titlesong")
+startbutton1.onclick = () =>{
+  menu.style.display="Block";
+  logo.style.display="none";
+  titlesong.play();
+}
 
 back.onclick = () =>{
   window.location.reload();
 }
-window.onload=function(){
-  document.getElementById("titlesong").play();
-};
-
 
 let numberOfCookies = 20;
 let cookieIncrease = 1;
@@ -194,7 +199,7 @@ let interval1 = 0;
           counter4.innerHTML = numberOfCookiesver2;
           if(numberOfCookiesver2<=0){
             clearInterval(interval1);
-            fight.style.display="none";
+            fight2.style.display="none";
             document.body.style.backgroundImage="none";
             gameover.style.display="block";
             chemicalplant.pause();
@@ -225,6 +230,7 @@ const fight3 = document.getElementById("fight3");
 const next2 = document.getElementById("next2");
 const story3 = document.getElementById("story3");
 const begin4 = document.getElementById("fightbegin4");
+const enemyc = document.getElementById("enemyc");
 const killAni2 = () => {
   hero3.style.backgroundPosition="0 101%, center";
   death2.style.opacity = 1;
@@ -262,10 +268,11 @@ let numberOfCookiesver3 = 20;
 let interval2 = 0;
        start2.onclick = () => {
         enemy3.style.backgroundImage="url(./res/img/Sprite-0001-export.gif)";
-        enemy3.style.marginTop="150px";
+        enemy3.style.marginTop="120px";
         enemy3.style.width="470px";
-        enemy3.style.marginLeft="45%";
+        enemy3.style.marginLeft="-44%";
         enemy3.style.height="230px";
+        enemyc.style.marginTop="25px";
         hero3.onclick= () => {
           shot.play();
           hp2 -= damage2;
@@ -284,7 +291,7 @@ let interval2 = 0;
           counter6.innerHTML = numberOfCookiesver3;
           if(numberOfCookiesver3<=0){
             clearInterval(interval2);
-            fight.style.display="none";
+            fight3.style.display="none";
             document.body.style.backgroundImage="none";
             gameover.style.display="block";
             sky.pause();
@@ -315,6 +322,8 @@ const start3=document.getElementById("start3");
 const death3 = document.getElementById("death3");
 const fight4 = document.getElementById("fight4");
 const next3 = document.getElementById("next3");
+const enemyc2 = document.getElementById("enemyc2");
+const story5 = document.getElementById("story5"); 
 
 const killAni3 = () => {
   hero4.style.backgroundPosition="0 101%, center";
@@ -354,10 +363,11 @@ let numberOfCookiesver4 = 20;
 let interval3 = 0;
        start3.onclick = () => {
         enemy4.style.backgroundImage="url(./res/img/metal-sonicatt-export.gif)";
-        enemy4.style.marginTop="130px";
-        enemy4.style.width="500px";
+        enemy4.style.marginTop="110px";
+        enemy4.style.width="535px";
         enemy4.style.marginLeft="40%";
         enemy4.style.height="300px";
+        enemyc2.style.marginTop="30px";
         hero4.onclick= () => {
           shot.play();
           hp3 -= damage3;
@@ -376,7 +386,7 @@ let interval3 = 0;
           counter8.innerHTML = numberOfCookiesver4;
           if(numberOfCookiesver4<=0){
             clearInterval(interval3); 
-            fight.style.display="none";
+            fight4.style.display="none";
             document.body.style.backgroundImage="none";
             gameover.style.display="block";
             icecap.pause();
@@ -392,13 +402,13 @@ let interval3 = 0;
         story5.style.display="block";
       }
       begin5.onclick = () => {
-        icecap.play();
+        final.play();
         document.body.style.backgroundImage="url(./res/img/deathegg2.png)";
         story5.style.display="none";
         fight5.style.display="block";
       }
 
-      const story5 = document.getElementById("story5");     
+          
 const hero5 = document.getElementById("hero5");
 const counter9 = document.getElementById("counter9");
 const enemy5 = document.getElementById("enemy5");
@@ -445,12 +455,13 @@ let numberOfCookiesver5 = 20;
 let interval4 = 0;
        start4.onclick = () => {
         enemy5.style.backgroundImage="url(./res/img/deatheggatt.gif)";
-        enemy5.style.marginTop="250px";
+        enemy5.style.marginTop="165px";
         enemy5.style.width="800px";
-        enemy5.style.marginLeft="-10%";
+        enemy5.style.marginLeft="-20%";
         enemy5.style.height="600px";
-enemycounter.style.marginTop="-800px";
+enemycounter.style.marginTop="-815px";
         hero5.onclick= () => {
+          shot.play();
           hp4 -= damage4;
           counter9.innerHTML = hp4;
           if(hp4<=0){ 
@@ -467,10 +478,20 @@ enemycounter.style.marginTop="-800px";
           counter10.innerHTML = numberOfCookiesver5;
           if(numberOfCookiesver5<=0){
             clearInterval(interval4);
+            fight5.style.display="none";
+            document.body.style.backgroundImage="none";
+            gameover.style.display="block";
+            final.pause();
+            over.play();
           };
         }, 1000);
 
       };
+      next4.onclick = () => {
+        final.pause();
+        fight5.style.display="none";
+        document.body.style.backgroundImage="none";
+      }
        
        
       
