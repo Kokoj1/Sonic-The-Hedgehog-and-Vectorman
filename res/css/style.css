@@ -13,6 +13,7 @@ body{
     text-align: center;
     margin: 0 auto;
     color:white;
+    font-family: pixel;
 }
 #segalogo{
     width:50%;
@@ -153,7 +154,7 @@ body{
 #counter {
     margin-left:60%;
     font-size: 42px;
-    margin-top:-300px;
+    margin-top:-291px;
     color: red;
     background-color: white;
     width:50px;
@@ -222,7 +223,7 @@ body{
     z-index: 2;
 }
 #counter3 {
-    margin-left:75%;
+    margin-left:65%;
     font-size: 42px;
     margin-top:-300px;
     color: red;
@@ -244,7 +245,7 @@ body{
     text-align:center;
 }
 #enemy2{
-    margin-left: 71%;
+    margin-left: 67%;
      background-image:url("../img/mecha\ sonic2.gif");
      height:220px;
      width: 160px;
@@ -510,10 +511,33 @@ body{
     color:white;
     margin-top:-100px;
 }
+#ending{
+    font-family:pixel;
+    display:none;
+    color:white;
+    text-align:center;
+    
+}
+#text{
+    font-family:pixel;
+}
+#music{
+    color:white;
+    display:none;
+    width:60%;
+    margin:auto;
+    text-align: center;
+    font-family: sonic1;
+}
+#jukebox{
+    margin-top:10px;
+}
 @font-face{font-family: sonic1;
     src: url("../fonts/SonicHUD.ttf")}
     @font-face{font-family: sonic2;
         src: url("../fonts/sonic-2-caps.ttf")}
+        @font-face{font-family: pixel;
+            src: url("../fonts/Pixellari.ttf")}
 @media all and (max-width:1400px){
 #counter2{margin-top:480px;}
 #hero{margin-left:20%;}

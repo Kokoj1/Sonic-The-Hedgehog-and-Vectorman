@@ -25,7 +25,7 @@ const back = document.getElementById("back");
 const over = document.getElementById("over");
 const startbutton1 = document.getElementById("startbutton1");
 const logo = document.getElementById("logo");
-const titlesong = document.getElementById("titlesong")
+const titlesong = document.getElementById("titlesong");
 startbutton1.onclick = () =>{
   menu.style.display="Block";
   logo.style.display="none";
@@ -42,6 +42,7 @@ let cookieIncrease = 1;
 startgame.onclick = () =>{
   menu.style.display="none";
 story.style.display="block";
+titlesong.pause();
 }
 begin.onclick = () => {
   document.body.style.backgroundImage="url(./res/img/greenhill.gif)";
@@ -176,10 +177,10 @@ let numberOfCookiesver2 = 20;
 
 let interval1 = 0;
        start1.onclick = () => {
-        enemy2.style.backgroundImage="url(./res/img/Sprite-0005.gif)";
-        enemy2.style.marginTop="95px";
-        enemy2.style.width="600px";
-        enemy2.style.marginLeft="44%";
+        enemy2.style.backgroundImage="url(./res/img/mecha-sonicattack.gif)";
+        enemy2.style.marginTop="96px";
+        enemy2.style.width="500px";
+        enemy2.style.marginLeft="47%";
         enemy2.style.height="300px";
         hero2.onclick= () => {
           shot.play();
@@ -269,7 +270,7 @@ let interval2 = 0;
        start2.onclick = () => {
         enemy3.style.backgroundImage="url(./res/img/Sprite-0001-export.gif)";
         enemy3.style.marginTop="120px";
-        enemy3.style.width="470px";
+        enemy3.style.width="467px";
         enemy3.style.marginLeft="-44%";
         enemy3.style.height="230px";
         enemyc.style.marginTop="25px";
@@ -363,8 +364,8 @@ let numberOfCookiesver4 = 20;
 let interval3 = 0;
        start3.onclick = () => {
         enemy4.style.backgroundImage="url(./res/img/metal-sonicatt-export.gif)";
-        enemy4.style.marginTop="110px";
-        enemy4.style.width="535px";
+        enemy4.style.marginTop="108px";
+        enemy4.style.width="532px";
         enemy4.style.marginLeft="40%";
         enemy4.style.height="300px";
         enemyc2.style.marginTop="30px";
@@ -418,6 +419,7 @@ const fight5 = document.getElementById("fight5");
 const next4 = document.getElementById("next4");
 const start4 = document.getElementById("start4");
 const enemycounter = document.getElementById("enemycounter");
+const ending = document.getElementById("ending");
 const killAni4 = () => {
   hero5.style.backgroundPosition="0 101%, center";
   death4.style.opacity = 1;
@@ -459,7 +461,7 @@ let interval4 = 0;
         enemy5.style.width="800px";
         enemy5.style.marginLeft="-20%";
         enemy5.style.height="600px";
-enemycounter.style.marginTop="-815px";
+enemycounter.style.marginTop="-818px";
         hero5.onclick= () => {
           shot.play();
           hp4 -= damage4;
@@ -491,7 +493,86 @@ enemycounter.style.marginTop="-815px";
         final.pause();
         fight5.style.display="none";
         document.body.style.backgroundImage="none";
+        ending.style.display="block";
       }
+      const titlesong2 = document.getElementById("titlesong2");
+      const greenhill2=document.getElementById("greenhill2");
+const chemicalplant2=document.getElementById("chemicalplant2");
+const sky2 = document.getElementById("skysanctuary2");
+const icecap2 = document.getElementById("icecap2");
+const gameover2 = document.getElementById("over2");
+const final2 = document.getElementById("final2");
+      const restart = document.getElementById("restart");
+      const restart2 = document.getElementById("restart2");
+      const jukebox = document.getElementById("jukebox");
+      const music = document.getElementById("music");
+      const play = document.getElementById("play");
+const pause = document.getElementById("pause");
+const play2 = document.getElementById("play2");
+const pause2 = document.getElementById("pause2");
+const play3 = document.getElementById("play3");
+const pause3 = document.getElementById("pause3");
+const play4 = document.getElementById("play4");
+const pause4 = document.getElementById("pause4");
+const play5 = document.getElementById("play5");
+const pause5 = document.getElementById("pause5");
+const play6 = document.getElementById("play6");
+const pause6 = document.getElementById("pause6");
+const play7 = document.getElementById("play7");
+const pause7 = document.getElementById("pause7");
+restart.onclick = () =>{
+        window.location.reload();
+      }
+      restart2.onclick = () =>{
+        window.location.reload();
+      }
+      jukebox.onclick = () => {
+        ending.style.display="none";
+        music.style.display="block";
+      }
+play.onclick = () => {
+  greenhill2.play();
+}
+pause.onclick = () => {
+  greenhill2.pause();
+}
+play2.onclick = () => {
+ chemicalplant2.play();
+}
+pause2.onclick = () => {
+  chemicalplant2.pause();
+}
+play3.onclick = () => {
+  sky2.play();
+ }
+ pause3.onclick = () => {
+   sky2.pause();
+ }
+ play4.onclick = () => {
+  icecap2.play();
+ }
+ pause4.onclick = () => {
+   icecap2.pause();
+ }
+ play5.onclick = () => {
+  final2.play();
+ }
+ pause5.onclick = () => {
+   final2.pause();
+ }
+ play6.onclick = () => {
+  gameover2.play();
+ }
+ pause6.onclick = () => {
+   gameover2.pause();
+ }
+ play7.onclick = () => {
+  titlesong2.play();
+ }
+ pause7.onclick = () => {
+   titlesong2.pause();
+ }
+
        
        
       
