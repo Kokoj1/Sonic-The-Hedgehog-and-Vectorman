@@ -9,6 +9,41 @@ body{
    margin: auto;
    background-color:black;
 }
+#restart2{
+    font-family: sonic2;
+    background-color:black;
+    width:150px;
+    margin:auto;
+    height:15px;
+}
+#menubuttons{
+    margin-top:-100px
+}
+#mecha2{
+    height:20%;
+}
+#quidebutton{
+    font-family: sonic2;
+    background-color:black;
+    width:200px;
+    margin:auto;
+    height:15px;
+}
+#quide{
+    display:none;
+    color:white;
+    text-align:center;
+    margin-left: 30%;
+    font-family: sonic1;
+}
+#backquide{
+    margin-top:400px;
+    margin-left:-40px;
+    color:black;
+    background-color: white;
+    width:80px;
+    font-family: sonic2;
+}
 #logo{
     text-align: center;
     margin: 0 auto;
@@ -37,34 +72,39 @@ body{
     font-size: medium;
 }
 #fightbegin{
-    background-color:black;
+    color:black;
     width:100px;
     margin:auto;
     height:15px;
+    background-color:white
 }
 #fightbegin2{
-    background-color:black;
+    color:black;
     width:100px;
     margin:auto;
     height:15px;
+    background-color:white
 }
 #fightbegin3{
-    background-color:black;
+    color:black;
     width:100px;
     margin:auto;
     height:15px;
+    background-color:white
 }
 #fightbegin4{
-    background-color:black;
+    color:black;
     width:100px;
     margin:auto;
     height:15px;
+    background-color:white
 }
-#fightbegin4{
-    background-color:black;
+#fightbegin5{
+    color:black;
     width:100px;
     margin:auto;
     height:15px;
+    background-color:white
 }
 #gameover{
     color:white;
@@ -90,7 +130,7 @@ body{
     text-align: center;
     margin: 0 auto;
     color:white;
-    background-image: url("../img/download.png");
+    background-image: url("../img/title-background.png");
     height:1070px;
     width:95%;
     overflow: auto;
@@ -105,7 +145,7 @@ body{
     width:50%;
     margin:auto;
     text-align: center;
-    font-family: sonic1;
+    font-family: pixel;
 }
 #story2{
     color:white;
@@ -154,7 +194,7 @@ body{
 #counter {
     margin-left:60%;
     font-size: 42px;
-    margin-top:-291px;
+    margin-top:-290px;
     color: red;
     background-color: white;
     width:50px;
@@ -228,7 +268,7 @@ body{
     margin-top:-300px;
     color: red;
     background-color: white;
-    width:50px;
+    width:100px;
     height:50px;
     font-family: sonic1;
     text-align:center;
@@ -249,7 +289,7 @@ body{
      background-image:url("../img/mecha\ sonic2.gif");
      height:220px;
      width: 160px;
-     margin-top:178px;
+     margin-top:177px;
 }
 #start1{
     margin-left:45%;
@@ -286,17 +326,17 @@ body{
 #counter5 {
     margin-left:63%;
     font-size: 42px;
-    margin-top:-250px;
+    margin-top:-255px;
     color: red;
     background-color: white;
-    width:50px;
+    width:100px;
     height:50px;
     font-family: sonic1;
     text-align:center;
 }
 #counter6 {
     margin-left:35%;
-     margin-top:20px;
+     margin-top:21px;
     font-size: 42px;
     color: rgb(236, 236, 236);
     background-color:red;
@@ -318,7 +358,7 @@ body{
     width:60%;
     margin:auto;
     text-align: center;
-    font-family: sonic1;
+    font-family: pixel;
 }
 #start2{
     margin-left:45%;
@@ -346,7 +386,7 @@ body{
     color: white;
     margin:auto;
     text-align:center;
-    font-family: sonic1;
+    font-family: pixel;
 }
 #fight4{
     display:none;
@@ -361,7 +401,7 @@ body{
 
 #story4{
     display:none;
-    font-family: sonic1;
+    font-family: pixel;
 }
 #hero4 {
     height: 210px;
@@ -382,7 +422,7 @@ body{
     margin-top:-270px;
     color: red;
     background-color: white;
-    width:50px;
+    width:100px;
     height:50px;
     font-family: sonic1;
     text-align:center;
@@ -457,10 +497,10 @@ body{
 #counter9 {
     margin-left:60%;
     font-size: 42px;
-    margin-top:-815px;
+    margin-top:-818px;
     color: red;
     background-color: white;
-    width:50px;
+    width:150px;
     height:50px;
     text-align:center;
     font-family: sonic1;
@@ -493,7 +533,7 @@ body{
     color: white;
     margin:auto;
     text-align:center;
-    font-family: sonic1;
+    font-family: pixel;
 }
 #enemycounter{
     width:500px;
@@ -531,6 +571,9 @@ body{
 }
 #jukebox{
     margin-top:10px;
+}
+#mission{
+    margin-top:50px;
 }
 @font-face{font-family: sonic1;
     src: url("../fonts/SonicHUD.ttf")}

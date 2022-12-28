@@ -26,18 +26,29 @@ const over = document.getElementById("over");
 const startbutton1 = document.getElementById("startbutton1");
 const logo = document.getElementById("logo");
 const titlesong = document.getElementById("titlesong");
+const quidebutton = document.getElementById("quidebutton");
+const quide = document.getElementById("quide");
+const backquide = document.getElementById("backquide");
+
 startbutton1.onclick = () =>{
   menu.style.display="Block";
   logo.style.display="none";
   titlesong.play();
 }
-
+quidebutton.onclick = () =>{
+  menu.style.display="none";
+  document.body.style.backgroundImage="none";
+  quide.style.display="flex";
+}
+backquide.onclick = () => {
+  window.location.reload();
+}
 back.onclick = () =>{
   window.location.reload();
 }
 
-let numberOfCookies = 20;
-let cookieIncrease = 1;
+let numberOfCookies = 30;
+let cookieIncrease = 3;
 
 startgame.onclick = () =>{
   menu.style.display="none";
@@ -80,7 +91,7 @@ hero.addEventListener("touchend", () => {
 
 let autoClickerIncrease = 1;
 let autoClickerIncrease2 = 1;
-let numberOfCookies2 = 20;
+let numberOfCookies2 = 50;
 
 let interval = 0;
        start.onclick = () => {
@@ -168,12 +179,12 @@ hero2.addEventListener("mouseup", () => {
 hero2.addEventListener("touchend", () => {
   killAniRest1();
 });
-let hp = 20;
-let damage = 1;
+let hp = 150;
+let damage = 3;
 
 let autoClickerIncreasever1 = 1;
 let autoClickerIncreasever2 = 1;
-let numberOfCookiesver2 = 20;
+let numberOfCookiesver2 = 50;
 
 let interval1 = 0;
        start1.onclick = () => {
@@ -259,18 +270,18 @@ hero3.addEventListener("mouseup", () => {
 hero3.addEventListener("touchend", () => {
   killAniRest2();
 });
-let hp2 = 20;
-let damage2 = 1;
+let hp2 = 240;
+let damage2 = 3;
 
 let autoClickerIncreasever3 = 1;
 let autoClickerIncrease3 = 1;
-let numberOfCookiesver3 = 20;
+let numberOfCookiesver3 = 50;
 
 let interval2 = 0;
        start2.onclick = () => {
         enemy3.style.backgroundImage="url(./res/img/Sprite-0001-export.gif)";
         enemy3.style.marginTop="120px";
-        enemy3.style.width="467px";
+        enemy3.style.width="466px";
         enemy3.style.marginLeft="-44%";
         enemy3.style.height="230px";
         enemyc.style.marginTop="25px";
@@ -354,18 +365,18 @@ hero4.addEventListener("touchend", () => {
   killAniRest3();
 });
 
-let hp3 = 20;
-let damage3 = 1;
+let hp3 = 300;
+let damage3 = 3;
 
 let autoClickerIncreasever4 = 1;
 let autoClickerIncrease4 = 1;
-let numberOfCookiesver4 = 20;
+let numberOfCookiesver4 = 50;
 
 let interval3 = 0;
        start3.onclick = () => {
         enemy4.style.backgroundImage="url(./res/img/metal-sonicatt-export.gif)";
         enemy4.style.marginTop="108px";
-        enemy4.style.width="532px";
+        enemy4.style.width="528px";
         enemy4.style.marginLeft="40%";
         enemy4.style.height="300px";
         enemyc2.style.marginTop="30px";
@@ -447,17 +458,17 @@ hero5.addEventListener("mouseup", () => {
 hero5.addEventListener("touchend", () => {
   killAniRest4();
 });
-let hp4 = 20;
-let damage4 = 1;
+let hp4 = 800;
+let damage4 = 3;
 
 let autoClickerIncreasever5 = 1;
 let autoClickerIncrease5 = 1;
-let numberOfCookiesver5 = 20;
+let numberOfCookiesver5 = 50;
 
 let interval4 = 0;
        start4.onclick = () => {
         enemy5.style.backgroundImage="url(./res/img/deatheggatt.gif)";
-        enemy5.style.marginTop="165px";
+        enemy5.style.marginTop="164px";
         enemy5.style.width="800px";
         enemy5.style.marginLeft="-20%";
         enemy5.style.height="600px";
