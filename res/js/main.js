@@ -47,8 +47,8 @@ back.onclick = () =>{
   window.location.reload();
 }
 
-let numberOfCookies = 30;
-let cookieIncrease = 3;
+let numberOfCookies = 20;
+let cookieIncrease = 4;
 
 startgame.onclick = () =>{
   menu.style.display="none";
@@ -179,8 +179,8 @@ hero2.addEventListener("mouseup", () => {
 hero2.addEventListener("touchend", () => {
   killAniRest1();
 });
-let hp = 150;
-let damage = 3;
+let hp = 160;
+let damage = 4;
 
 let autoClickerIncreasever1 = 1;
 let autoClickerIncreasever2 = 1;
@@ -270,8 +270,8 @@ hero3.addEventListener("mouseup", () => {
 hero3.addEventListener("touchend", () => {
   killAniRest2();
 });
-let hp2 = 240;
-let damage2 = 3;
+let hp2 = 200;
+let damage2 = 4;
 
 let autoClickerIncreasever3 = 1;
 let autoClickerIncrease3 = 1;
@@ -365,8 +365,8 @@ hero4.addEventListener("touchend", () => {
   killAniRest3();
 });
 
-let hp3 = 300;
-let damage3 = 3;
+let hp3 = 320;
+let damage3 = 4;
 
 let autoClickerIncreasever4 = 1;
 let autoClickerIncrease4 = 1;
@@ -459,7 +459,7 @@ hero5.addEventListener("touchend", () => {
   killAniRest4();
 });
 let hp4 = 800;
-let damage4 = 3;
+let damage4 = 4;
 
 let autoClickerIncreasever5 = 1;
 let autoClickerIncrease5 = 1;
