@@ -47,7 +47,7 @@ back.onclick = () =>{
   window.location.reload();
 }
 
-let numberOfCookies = 20;
+let numberOfCookies = 40;
 let cookieIncrease = 4;
 
 startgame.onclick = () =>{
