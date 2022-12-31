@@ -581,8 +581,3 @@ body{
         src: url("../fonts/sonic-2-caps.ttf")}
         @font-face{font-family: pixel;
             src: url("../fonts/Pixellari.ttf")}
-@media all and (max-width:1400px){
-#counter2{margin-top:480px;}
-#hero{margin-left:20%;}
-#start{text-align:center;}
-}
